@@ -9,9 +9,9 @@ USER model-server
 RUN torch-model-archiver \
   --model-name=mnist \
   --version=1.0 \
-  --model-file=/home/model-server/mnist.py \
-  --serialized-file=/home/model-server/mnist_cnn.pt \
-  --handler=/home/model-server/mnist_handler.py \
+  --model-file=/home/model-server/model.py \
+  --serialized-file=/home/model-server/resnext_nn.pt \
+  --handler=/home/model-server/handler.py \
   --export-path=/home/model-server/model-store
 
 CMD ["torchserve", \
