@@ -1,4 +1,4 @@
-FROM pytorch/torchserve
+FROM pytorch/torchserve:latest-gpu
 
 COPY mnist.py mnist_cnn.pt mnist_handler.py /home/model-server/
 
