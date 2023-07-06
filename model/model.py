@@ -1,0 +1,1 @@
+# defines the structure of the trained neural network
